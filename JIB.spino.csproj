@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{672E1E9F-927B-4EF5-8C00-68905E8FAA6E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>JIB.spino</RootNamespace>
+    <AssemblyName>JIB.spino</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.24.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Address.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Address.Designer.cs">
+      <DependentUpon>Address.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AW.Designer.cs">
+      <DependentUpon>AW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="db.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hpxHS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hpxHS.Designer.cs">
+      <DependentUpon>hpxHS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hpxM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hpxM.Designer.cs">
+      <DependentUpon>hpxM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hyxIE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hyxIE.Designer.cs">
+      <DependentUpon>hyxIE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="logicG431.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="logicG431.Designer.cs">
+      <DependentUpon>logicG431.cs</DependentUpon>
+    </Compile>
+    <Compile Include="logicGPRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="logicGPRO.Designer.cs">
+      <DependentUpon>logicGPRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="logicIE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="logicIE.Designer.cs">
+      <DependentUpon>logicIE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MSI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MSI.Designer.cs">
+      <DependentUpon>MSI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NT5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NT5.Designer.cs">
+      <DependentUpon>NT5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PREDA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PREDA.Designer.cs">
+      <DependentUpon>PREDA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="razHS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="razHS.Designer.cs">
+      <DependentUpon>razHS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="razIE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="razIE.Designer.cs">
+      <DependentUpon>razIE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="razM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="razM.Designer.cs">
+      <DependentUpon>razM.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Address.resx">
+      <DependentUpon>Address.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AW.resx">
+      <DependentUpon>AW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hpxHS.resx">
+      <DependentUpon>hpxHS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hpxM.resx">
+      <DependentUpon>hpxM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hyxIE.resx">
+      <DependentUpon>hyxIE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="logicG431.resx">
+      <DependentUpon>logicG431.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="logicGPRO.resx">
+      <DependentUpon>logicGPRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="logicIE.resx">
+      <DependentUpon>logicIE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MSI.resx">
+      <DependentUpon>MSI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NT5.resx">
+      <DependentUpon>NT5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PREDA.resx">
+      <DependentUpon>PREDA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="razHS.resx">
+      <DependentUpon>razHS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="razIE.resx">
+      <DependentUpon>razIE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="razM.resx">
+      <DependentUpon>razM.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mrspinozz_mascot_transperentBG_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\solid2-lightbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\สปอนเซอร์ 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\solid1-darkbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HyperX-Pulsefire-Surge-RGB-Gaming-Mouse-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-computer-icons-shopping-cart-shopping-cart-angle-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hyperxc22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\earbud1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gpro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G333.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Razer DeathAdder V2 Pro Wireless.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Razer Kraken Tournament Edition.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RAZER HAMMERHEAD PRO V2 GAMING GEAR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hymo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hyperxc221.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NT5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NT51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PREDA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MSI.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\92634855_534830677411033_4736358173022093312_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3c8e61ad2a1b36ac8cfa8dc2c0ac462e.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gelida black.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ESPORT.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ESPORTTT.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bggm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ewwq.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GRRR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp6542946.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bggm1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GRRR1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31627456-password-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_EY50YzYGk9JkYo6K779u-A.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31627456-password-background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp65429461.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp65429462.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\93695768_555054981867825_7290901065942171648_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\babyome.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meme1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
